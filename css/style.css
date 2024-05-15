@@ -1,0 +1,167 @@
+/* Estilos padrões */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+body,html{
+    font-size: 16px;
+    height: 100%;
+    overflow-x: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.background{
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s;
+}
+.margin{
+    border: 1px solid red;
+}
+/* Home */
+#home{
+    height: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    z-index: 1;
+}
+.procura{
+    text-align: end;
+}
+
+/* Home - procura */
+.procura button{
+    margin: 0rem 0.5rem 0rem;
+    width: 40px;
+    height: 40px;
+    background: #4d54ff;
+    border: none;
+    border-radius: 50%;
+    transform: translate(60px,-2px);
+}
+/* classe criada para uma animação com o botão na homepage */
+.btn-custom{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.procura input{
+    width: 0px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
+    background-color: #4d54ff;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+/* Animações para o input */
+.animacao_aumentar_caixa{
+    animation: expandir .5s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes expandir{
+    0%{
+        width: 0px;
+    }
+    50%{
+        width: 150px;
+    }
+    100%{
+        padding: 0.5rem 0.5rem 0.5rem 4rem;
+        background-color: aliceblue;
+        width: 300px;
+    }
+}
+/* Home- envelope */
+.conteudo-clima{
+    padding: 2rem;
+    text-align: center;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgba(194,188,194,0)0%, rgba(194,188,194,1));
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    filter: blur(.5px);
+}
+.conteudo-clima img{
+    margin-bottom: 0.25rem;
+}
+
+.conteudo-clima h2{
+    margin-bottom: 0.625rem;
+    font-size: 3.375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.conteudo-clima h3{
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+}
+.temperatura-variacoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.conteudo-noticia{
+    padding: 2rem;
+    text-align: center;
+    border-radius: 50px;
+    background: linear-gradient(180deg, rgba(194,188,194,0)0%, rgba(194,188,194,1));
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    filter: blur(.5px);
+}
+
+.conteudo-noticia h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3.375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.noticia-caixa{
+    text-align: center;
+    list-style: none;
+}
+.noticia-caixa p{
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 300px;
+    font-size: 1.3rem;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(0, 0, 0)
+}
+.noticia-caixa a{
+    text-decoration: none;
+}
+.noticia-caixa p:hover{
+    color: rgb(37, 37, 37);
+}
+.noticia-img{
+    border-radius: 5px;
+}
+.fileira-conteudo:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+/* Background video - Home */
+#background-video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
