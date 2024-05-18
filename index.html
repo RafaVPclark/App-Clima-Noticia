@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>App Clima & Musica</title>
+    <title>App Clima & Notícia</title>
     <!-- Bootstrap 5.3.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-  </head>
-  <body id="background">
+</head>
+
+<body id="background">
     <!-- Cabeçalho do site com pesquisa -->
     <header class="fixed-top">
         <nav>
@@ -18,14 +21,14 @@
                 <!-- Sessão de busca -->
                 <div class="row procura mb-5 mb-sm-2 mt-5">
                     <div class="col-12">
-                            <button onclick="botaoDeBusca()" id="btn-custom">
-                                <img src="icones/search-5-svgrepo-com.svg" width="30px" alt="icone-lupa">
-                            </button>
-                            <input id="input-busca" placeholder="Coloque o nome da cidade" type="text">
-                            
+                        <button onclick="botaoDeBusca()" id="btn-custom">
+                            <img src="icones/search-5-svgrepo-com.svg" width="30px" alt="icone-lupa">
+                        </button>
+                        <input id="input-busca" placeholder="Coloque o nome da cidade" type="text">
+
                     </div>
                 </div>
-    
+
             </div>
         </nav>
     </header>
@@ -35,13 +38,14 @@
         <video id="background-video" autoplay muted loop>
             <source src="videos/beach.mp4" type="video/mp4">
         </video>
-        
+
         <!-- Conteúdo da home -->
         <div class="container">
             <!-- Sessão de conteúdo -->
             <div class="row envelope justify-content-between">
                 <div class="col-10 col-md-5 col-lg-3 conteudo-clima mx-auto">
-                    <img src="https://openweathermap.org/img/wn/10d@2x.png" width="100px" alt="icone-tempo" class="icone-tempo">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" width="100px" alt="icone-tempo"
+                        class="icone-tempo">
                     <h2 class="nome-cidade"></h2>
                     <h3 class="temperatura"></h3>
                     <div class="temperatura-variacoes">
@@ -53,19 +57,19 @@
                     <img class="icone-noticia mb-3" src="icones/news-svgrepo-com.svg" width="100px" alt="noticia-icon">
                     <div class="row">
                         <div class="col-12 col-lg-12 mx-auto noticia-caixa">
-                            
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Scripts Bootstrap 5.3.3 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <!-- Scripts próprios -->
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>

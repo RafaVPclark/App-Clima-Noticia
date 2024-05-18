@@ -62,6 +62,7 @@ async function procurarCidade(valorInput) {
 // Função para mudar as imagens de fundo
 function updateBackground(tempAtual){
     console.log(tempAtual);
+    const home = document.getElementById("home");
     let background = document.getElementById('background-video');
     let backgroundImg = document.getElementById('background');
     if(window.innerWidth <= 600){
@@ -76,6 +77,7 @@ function updateBackground(tempAtual){
             backgroundImg.style.backgroundImage = "url('img/beach2.jpg')";
         }
     }else{
+        home.style.height = '100%';
         if(tempAtual >= 25){
             background.style.display = 'block';
             background.src = 'videos/desert2.mp4';
@@ -127,8 +129,12 @@ async function obterNoticiaPais(country) {
 function mostrarNewsNaTela(resultado) {
     console.log(resultado);
     let noticiaCaixa = document.querySelector(".noticia-caixa");
+    const home = document.getElementById("home");
     // let imagemCaixa = document.querySelector(".imagem-caixa");
     noticiaCaixa.innerHTML = "<h2>Notícias</h2>";
+    if(window.innerWidth < 600){
+        home.style.height = "300%";
+    }
     for (let i = 0; i < 3; i++) {
         noticiaCaixa.innerHTML += `
         <a href="${resultado[i].url}" target="_blank">
