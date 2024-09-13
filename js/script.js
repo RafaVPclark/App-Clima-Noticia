@@ -2,12 +2,8 @@
 var input = document.getElementById("input-busca");
 var botao = document.getElementById("btn-custom");
 let tempAtual = 0;
-// Chave para a API/openweather
-const apiKey = "b37788054ccb0594cd46e6be1d1f96fc";
-// Chave para a API NEWS Api
-const apiKeyNews = "c4cd5a7e18174029be8527a75865167e";
-// Chave para a GNEWSapi
-const gNewsApi = "92a9dfdafdc509d87dbd603c8543cf40";
+const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
+const gNewsApi = process.env.NEXT_PUBLIC_GNEWS_API_KEY;
 function botaoDeBusca() {
     const inputValue = input.value;
     movimentoInput(inputValue);
